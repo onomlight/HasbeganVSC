@@ -1,0 +1,113 @@
+/* top css */
+* {
+  margin: 0;
+}
+header {
+  margin: 0;
+  padding: 0;
+}
+.topnav {
+  display: flex;
+  text-align: left;
+  vertical-align: top;
+  list-style-type: disc;
+}
+.qick {
+  list-style: none;
+  padding: 10px;
+}
+.qickmenu {
+  float: right;
+  position: absolute;
+  left: 80%;
+  top: 0;
+}
+.inner {
+  background-color: rgb(191, 194, 196);
+}
+.has {
+  font-size: 500%;
+}
+
+/* nav css */
+#wrapper {
+  background-color: rgb(191, 194, 196);
+  position: relative;
+  padding: 0;
+}
+
+#nav {
+  width: 100%;
+  max-width: 1024px;
+  padding: auto;
+  margin: 0 auto;
+}
+
+#menu__list {
+  display: table;
+  list-style-type: none;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+#menu__menu {
+  display: table-cell;
+  vertical-align: middle;
+
+  height: 50px;
+}
+
+#menu__menu:hover {
+  background-color: #deb6ab;
+}
+
+#menu__menu:hover #subwrapper {
+  display: block;
+}
+
+#menu__menu:hover #submenu__list {
+  display: table;
+}
+
+#subwrapper {
+  display: none;
+
+  background-color: #deb6ab;
+
+  width: 100%;
+
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+#subnav {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+#submenu__list {
+  display: none;
+  list-style-type: none;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+#submenu__menu {
+  display: table-cell;
+  vertical-align: middle;
+
+  height: 50px;
+
+  cursor: pointer;
+}
+
+#submenu__menu:hover {
+  background-color: #ac7d88;
+}
