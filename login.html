@@ -10,16 +10,25 @@
   </head>
 
   <body>
-    <h1 style="margin: 20px; text-align: center">Login</h1>
-    <div class="big1">
-      <form action="">
-        <input class="set1" type="text" placeholder="아이디" class="in" />
-        <input class="set1" type="password" placeholder="비밀번호" class="in" />
-        <input class="set1" type="submit" id="btn" value="로그인" /><br />
-      </form>
-      <a class="b1" href="">아이디 찾기 |</a>
-      <a class="b1" href="">비밀번호 찾기 |</a>
-      <a class="b1" href="">회원가입</a>
+    <div class="main">
+      <h1 class="logo">Login</h1>
+      <div class="container">
+        <input type="text" placeholder="ID" id="id" class="account" />
+        <input
+          type="password"
+          placeholder="Password"
+          id="password"
+          class="account"
+        />
+        <button id="login" class="account">login</button>
+        <p id="alert" class="account"></p>
+      </div>
+      <div>
+        <a class="b1" href="">아이디 찾기 |</a>
+        <a class="b1" href="">비밀번호 찾기 |</a>
+        <a class="b1" href="">회원가입</a>
+      </div>
     </div>
+    <script src="login.js"></script>
   </body>
 </html>

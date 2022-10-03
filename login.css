@@ -1,4 +1,4 @@
-.big1 {
+/* .big1 {
   margin: auto;
   width: 300px;
   background-color: #eeeff1;
@@ -25,6 +25,65 @@
   background-color: #9b9b9b;
   margin-bottom: 30px;
   color: white;
+
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+#alert {
+  border-color: transparent;
+}
+.account {
+  display: block;
+  margin-bottom: 3px;
+  padding: 3px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+} */
+
+.main {
+  width: 350px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.logo {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+#login {
+  width: 100%;
+  background-color: #9b9b9b;
+  border-color: transparent;
+  color: white;
+  height: 35px;
+}
+
+.account {
+  display: block;
+  height: 25px;
+  margin-bottom: 10px;
+  padding: 3px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+#alert {
+  border-color: transparent;
 }
 
 .b1 {
