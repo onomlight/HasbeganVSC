@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="height: 1500px; width: 90%; border: 1px solid gray; margin: auto;">                        
+        <h2 style="text-align: center">주문하기</h2>
+        <div>
+            <h3>주문 상품 정보</h3>
+            <hr>
+            <div >
+                <div class="order_item">
+                    <dl>
+                        <dt>
+                            <span class="order-seller">상품명</span>
+                        </dt> 
+                        <dt>
+
+                        </dt> 
+                        <dt></dt> 
+                        <dt>주문금액</dt>
+                    </dl> 
+                    <dl >
+                        <dd >
+                            <a  href=" ">
+                                <img  src="" alt="상품옵션명"></a>
+                            </dd> 
+                            <dd >
+                                <a  href=" ">
+                                    <span  class="itemname">상품명</span></a> 
+                                    <span  class="item-option">상품옵션명</span> 
+                                    <span >1개</span></dd> 
+                                    <dd >
+                                    
+    </dd>
+     <dd >32,000원</dd>
+    </dl>
+</div> 
+<div class="price_sum">
+    상품 
+    <span>32,000</span>원 + 배송 <span>0</span>원 
+    <span class="large">주문금액 32,000원</span>
+</div> 
+<input type="hidden" value="0">
+</div>
+    </div>
+    <div class="price_total">총 결제금액 <span  >32,000원</span></div>
+
+    <div data-v-01da846a="" data-v-b3996972="" class="order-delivery-wrap">
+        <h2 data-v-01da846a="">주문자 정보</h2> 
+            <div data-v-01da846a="" class="order_delivery">
+                <dl data-v-01da846a="">
+                    <dt data-v-01da846a="">
+                        <label data-v-01da846a="" for="orderer_name">이름</label>
+                    </dt> 
+                    <dd data-v-01da846a="">
+                        <input data-v-01da846a="" type="text" id="orderer_name" class="w100per">
+                    </dd>
+                </dl>
+                 <dl data-v-01da846a="">
+                     <dt data-v-01da846a="">휴대폰</dt> 
+                     <dd data-v-01da846a="">
+                         <label data-v-01da846a="" for="orderer_telephone1" class="skip">첫번째 휴대폰 번호 입력창</label> 
+                         <input data-v-01da846a="" type="tel" id="orderer_telephone1" maxlength="3" class="w80px"> -
+        <label data-v-01da846a="" for="orderer_telephone2" class="skip">두번째 휴대폰 번호 입력창</label> <input data-v-01da846a="" type="tel" id="orderer_telephone2" maxlength="4" class="w80px"> -
+        <label data-v-01da846a="" for="orderer_telephone3" class="skip">세번째 휴대폰 번호 입력창</label> <input data-v-01da846a="" type="tel" id="orderer_telephone3" maxlength="4" class="w80px"> <!----> <!---->
+    </dd>
+</dl> 
+<dl data-v-01da846a="">
+    <dt data-v-01da846a="">이메일</dt>
+     <dd data-v-01da846a="">
+         <label data-v-01da846a="" for="orderer_email1" class="skip">이메일 아이디 입력창</label> 
+         <input data-v-01da846a="" type="text" id="orderer_email1" class="w28per"> @
+        <label data-v-01da846a="" for="orderer_email2" class="skip">이메일 주소 입력창</label> 
+        <input data-v-01da846a="" type="text" id="orderer_email2" class="w28per">
+    </dd>
+</dl>
+</div> 
+<h2 data-v-01da846a="">배송지 정보
+    <a data-v-01da846a="" href="#" class="btn-shipping">변경하기</a></h2> 
+    <div data-v-01da846a="" class="order_delivery">
+        <dl data-v-01da846a="">
+            <dt data-v-01da846a="">
+                <label data-v-01da846a="" for="shipping_name">수령인</label>
+            </dt>
+             <dd data-v-01da846a="">
+                 <input data-v-01da846a="" type="text" id="shipping_name" disabled="disabled" class="w100per"></dd></dl>
+                  <dl data-v-01da846a=""><dt data-v-01da846a="">휴대폰</dt> 
+                    <dd data-v-01da846a="">
+                        <label data-v-01da846a="" for="shipping_telephone1" class="skip">첫번째 휴대폰 번호 입력창</label> 
+                        <input data-v-01da846a="" type="tel" id="shipping_telephone1" maxlength="3" disabled="disabled" class="w80px"> -
+        <label data-v-01da846a="" for="shipping_telephone2" class="skip">첫번째 휴대폰 번호 입력창</label> 
+            <input data-v-01da846a="" type="tel" id="shipping_telephone2" maxlength="4" disabled="disabled" class="w80px"> -
+        <label data-v-01da846a="" for="shipping_telephone3" class="skip">첫번째 휴대폰 번호 입력창</label> 
+            <input data-v-01da846a="" type="tel" id="shipping_telephone3" maxlength="4" disabled="disabled" class="w80px">
+        </dd>
+    </dl> 
+        <dl data-v-01da846a="">
+            <dt data-v-01da846a="">배송주소</dt> 
+                <dd data-v-01da846a="">
+                    <label data-v-01da846a="" for="address-zipcode" class="skip">우편번호 입력창</label>
+                     <input data-v-01da846a="" type="text" id="address-zipcode" disabled="disabled" class="w49per address-zipcode"> 
+                     <label data-v-01da846a="" for="address1" class="skip">주소 입력창</label> 
+                     <input data-v-01da846a="" type="text" id="address1" disabled="disabled" class="w49per order_addr"> 
+                     <label data-v-01da846a="" for="address2" class="skip">상세주소 입력창</label> 
+                     <input data-v-01da846a="" type="text" id="address2" disabled="disabled" class="w49per order_addr"> 
+                     <!---->
+                    </dd>
+                </dl>
+                 <dl data-v-01da846a="" class="delivery-memo-wrap select-default">
+                     <dt data-v-01da846a="">
+                         <label data-v-01da846a="" for="delivery-memo-list-button">배송메모</label></dt> 
+                         <dd data-v-01da846a="">
+                             <select data-v-01da846a="" id="delivery-memo-list" class="coupon" style="display: none;">
+                           
+                                <option data-v-01da846a="" value="">배송시 요청사항을 선택해주세요</option>
+                                <option data-v-01da846a="" value="2">문 앞에 놓아 주세요.</option>
+                                <option data-v-01da846a="" value="1">경비(관리)실에 맡겨 주세요.</option>
+                                <option data-v-01da846a="" value="6">택배함에 넣어 주세요.</option>
+                                <option data-v-01da846a="" value="3">직접 받겠습니다.</option>
+                                <option data-v-01da846a="" value="5">직접 입력</option>
+                            </select>
+                        <span tabindex="0" id="delivery-memo-list-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="delivery-memo-list-menu" aria-haspopup="listbox" class="ui-selectmenu-button btn-delivery-address btn-select-default ui-selectmenu-button-closed ui-corner-all ui-button ui-widget">
+                            <span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span>
+                            <span class="ui-selectmenu-text">배송시 요청사항을 선택해주세요</span>
+                            <input type="text" aria-autocomplete="list" aria-controls="delivery-memo-list-menu"></span> 
+                            <div data-v-01da846a="" id="delivery-memolist-wrap" class="delivery-memolist-wrap">
+                                <div class="ui-selectmenu-menu delivery-address-menu ui-front">
+                                    <ul aria-hidden="true" aria-labelledby="delivery-memo-list-button" id="delivery-memo-list-menu" role="listbox" tabindex="0" class="ui-menu ui-corner-bottom ui-widget ui-widget-content"></ul>
+                                </div>
+                            </div>
+                             <input data-v-01da846a="" type="text" id="delivery-memo" placeholder="20자 이내로 작성해주세요" aria-label="배송메모 입력칸" maxlength="20" class="delivery-memo" style="display: none;">
+                            </dd>
+                        </dl>
+                    </div>
+                     <div data-v-227bbaba="" data-v-01da846a="" id="delivery-addr-modal" class="delivery-popup" style="display: none;">
+                     <div data-v-227bbaba="" class="pop_area">
+                         <div data-v-227bbaba="" class="p_header">
+                             <h2 data-v-227bbaba="" class="tit">배송지 변경</h2>
+                            </div> 
+                            <div data-v-227bbaba="" class="p_content">
+                                <div data-v-07324849="" data-v-227bbaba="" class="no-delivery">
+                                    <div data-v-07324849="" class="txt-wrap">
+                                        <div data-v-07324849="">
+                                            <img data-v-07324849="" src="/static/22.07.01/images/ic-default-exclamation@3x.png" alt="알림"></div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="delivery-input-bottom" style="display: none;">
+                                    <input type="checkbox" id="chk-default-delivery" class="chk-default-delivery"> 
+                                        <label  for="chk-default-delivery">기본 배송지로 저장</label>
+                                    </div> 
+                                    <div  class="p_footer">
+                                        <div  class="btn-wrap">
+                                            <!----> 
+                                            <button data-v-227bbaba="" type="button">배송지 추가</button>
+                                        </div>
+                                    </div> 
+                                    <button data-v-227bbaba="" type="button" class="btn-popup-close">팝업닫기</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-v-478ef571="" class="payment-btn-area">
+                            <a data-v-478ef571="" href="#" class="btn_order_order disabled">주문하기</a>
+                        </div>
+</body>
+
+<style>
+    dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.order_item dl {
+    width: 100%;
+    display: table-row;
+}
+    *{
+        box-sizing: border-box;
+    }
+    .order_item dl dt {
+    padding-bottom: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+}
+.order_item dd, .order_item dt {
+    display: table-cell;
+    vertical-align: middle;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+dt{
+    display: block;
+}
+.order_item {
+    display: table;
+    width: 100%;
+}
+.price_sum {
+    padding: 20px 30px 20px 10px;
+    text-align: right;
+    font-size: 1.3em;
+    
+    border-bottom: 1px solid #000;
+    color: #8d8d8d;
+}
+.price_sum span {
+    color: #000000;
+}
+.price_total {
+    font-size: 1.7em;
+    padding: 30px 30px 30px 10px;
+    text-align: right;
+    font-weight: 600;
+}
+.price_total span {
+    color: #d3a164;
+}
+.order-delivery-wrap .order_delivery[data-v-01da846a] {
+    overflow: visible;
+}
+.order_delivery {
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+    display: table;
+    width: 100%;
+}
+
+
+ 
+
+.order-delivery-wrap .order_delivery[data-v-01da846a] {
+    overflow: visible;
+}
+ 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+사용자 에이전트 스타일시트
+div {
+    display: block;
+}
+body {
+    -webkit-text-size-adjust: none;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    font-family: 'Noto Sans KR', sans-serif;
+    word-break: keep-all;
+}
+
+.order-delivery-wrap .order_delivery[data-v-01da846a]:after {
+    clear: both;
+    display: block;
+    content: "";
+}
+.order_delivery {
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+    display: table;
+    width: 100%;
+}
+.order_delivery dt, .order_delivery dd {
+    display: table-cell;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+}
+.order_delivery {
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+    display: table;
+    width: 100%;
+}
+.orderpage.checkout[data-v-b3996972] input[type=text] {
+    background: #fff;
+    border: 1px solid #e4e6e9;
+    color: #202429;
+}
+ 
+.order-delivery-wrap input[type=text][data-v-01da846a] {
+    margin: 2px 0;
+}
+
+
+.orderpage[data-v-b3996972] input {
+    padding: 14px 13px;
+    font-size: 16px;
+}
+
+.orderpage[data-v-b3996972] input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    padding: 13px 19px;
+    border-radius: 0;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.orderpage input[type=text] {
+    padding: 13px;
+    background: #f5f5f5;
+    color: #8d8d8d;
+    border: none;
+    font-size: 0.9em;
+    margin: 3px 0px;
+}
+[type=button], [type=email], [type=password], [type=submit], [type=tel], [type=text], textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+}
+.w100per {
+    width: 100%;
+    padding: 10px;
+}
+ 
+ 
+input[type="text" i] {
+    padding: 10px 20px;
+}
+ 
+input {
+    writing-mode: horizontal-tb !important;
+ 
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 9px 10px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+.order_delivery dd {
+    line-height: 48px;
+}
+  
+body {
+    -webkit-text-size-adjust: none;
+}
+.skip {
+    top: 0;
+    left: -999em;
+}
+.skip, .visually-hidden {
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+}
+ 
+ 
+label {
+    cursor: default;
+}
+.order_delivery dd {
+    line-height: 48px;
+}
+.order_delivery dl {
+    display: table-row;
+}
+ 
+select:not(:-internal-list-box) {
+    overflow: visible !important;
+}
+ 
+select {
+    writing-mode: horizontal-tb !important;
+   
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: field;
+    cursor: default;
+    margin: 0em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    border-radius: 0px;
+}
+.order-delivery-wrap[data-v-01da846a] .btn-delivery-address {
+    overflow: hidden;
+    position: relative;
+    margin: 2px 0;
+    padding: 12.5px 19px;
+    white-space: normal;
+    border: 1px solid #e4e6e9;
+    background-color: #fff;
+}
+.ui-selectmenu-button.ui-button {
+    text-align: left;
+    white-space: nowrap;
+    width: 14em;
+}
+.ui-selectmenu-button.ui-button {
+    width: 100% !important;
+    border-radius: 0px;
+    border-color: #000000;
+    color: #000000;
+    padding: 10px 20px;
+    background: #ffffff;
+    margin-bottom: 10px;
+}
+.order_delivery dd span {
+    font-size: 13px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 3px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 3px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 3px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 3px;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
+    color: #454545;
+    text-decoration: none;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: 1px solid #c5c5c5;
+    background: #f6f6f6;
+    font-weight: normal;
+    color: #454545;
+}
+.ui-widget {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em;
+}
+.ui-button, .ui-button:link, .ui-button:visited, .ui-button:hover, .ui-button:active {
+    text-decoration: none;
+}
+.ui-button {
+    padding: 0.4em 1em;
+    display: inline-block;
+    position: relative;
+    line-height: normal;
+    margin-right: 0.1em;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: visible;
+}
+ 
+.order_delivery dd {
+    line-height: 48px;
+}
+/* .btn_order_order.disabled[data-v-478ef571] {
+    background-color: #cfd2d7;
+    cursor: default;
+    pointer-events: none;
+} */
+a:link {
+    text-decoration: none;
+}
+/* .btn_order_order, .btn_orderinfo_1, .btn_orderinfo_3 {
+    cursor: pointer;
+} */
+.btn_order_order {
+    max-width: 290px;
+}
+.orderpage[data-v-b3996972] input {
+    padding: 14px 13px;
+    font-size: 16px;
+}
+.btn_order_order {
+    padding: 25px;
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+    margin: 0px auto;
+    display: block;
+    background: #000000;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+</style>
+</html>
+
