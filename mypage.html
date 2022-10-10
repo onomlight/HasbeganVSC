@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- Bootstrap CSS -->
     <link
@@ -18,70 +18,121 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
-    <div class="bigdiv1" style="border: 1px solid green; width: 1400px; height: 600px; display: flex; margin: auto;">
-        <div class="profile" style="height: 500px; width: 300px; border: 1px solid gold; margin: 20px;"> 
-            <div class="img" style="height: 200px; width: 200px; border: 2px solid gray; margin: auto; border-radius: 10rem;"> 
-                <img src="" alt="">
-            </div>
-            <div><input type="button" value="장바구니"> </div>
-            <div><input type="button" value="취소/교환"></div>
-        </div> 
-        <div class="scr" style="height: 300px; width: 800px; border: 1px solid gray; display: flex;">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#headers").load("top.html"); //헤더 인클루드
+      });
+    </script>
 
+    <div id="headers"></div>
+
+    <div id="footers"></div>
+  </head>
+  <body>
+    <div id="headers"></div>
+    <div
+      class="bigdiv1"
+      style="
+        border: 1px solid green;
+        width: 1400px;
+        height: 600px;
+        display: flex;
+        margin: auto;
+      "
+    >
+      <div
+        class="profile"
+        style="
+          height: 500px;
+          width: 300px;
+          border: 1px solid gold;
+          margin: 20px;
+        "
+      >
+        <div
+          class="img"
+          style="
+            height: 200px;
+            width: 200px;
+            border: 2px solid gray;
+            margin: auto;
+            border-radius: 10rem;
+          "
+        >
+          <img src="" alt="" />
         </div>
-        
+        <div><input type="button" value="장바구니" /></div>
+        <div><input type="button" value="취소/교환" /></div>
+      </div>
+      <div
+        class="scr"
+        style="
+          height: 300px;
+          width: 800px;
+          border: 1px solid gray;
+          display: flex;
+        "
+      ></div>
+    </div>
+    <div
+      class=""
+      style="
+        left: 100px;
+        height: 300px;
+        width: 1000px;
+        border: 5px solid blue;
+        margin: auto;
+      "
+    >
+      <table class="table table-hover" style="margin: 0">
+        <thead>
+          <tr>
+            <th scope="col">주문 번호</th>
+            <th scope="col">주문 일자</th>
+            <th scope="col">주문 상품</th>
+            <th scope="col">수량</th>
+            <th scope="col">총 구매 금액</th>
+            <th scope="col">주문 상태</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">20220923</th>
+            <td>이것은 갈비인가 통닭인가</td>
+            <td>치킨</td>
+            <td>1</td>
+            <td>12,300</td>
+            <td>입금완료</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>제목 2</td>
+            <td>2번</td>
+            <td>@fat</td>
+            <td>123</td>
+            <td>X</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>제목 3</td>
+            <td>닉네임3</td>
+            <td>@twitter</td>
 
+            <td>123</td>
+            <td>X</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>제목 4</td>
+            <td>닉네임 4</td>
+            <td>@twitter</td>
+            <td>123</td>
+            <td>X</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div class="" style="left: 100px; height: 300px; width: 1000px; border: 5px solid blue; margin: auto;">
-        <table class="table table-hover" style="margin: 0;">
-            <thead>
-              <tr>
-                <th scope="col">주문 번호</th>
-                <th scope="col">주문 일자</th>
-                <th scope="col">주문 상품</th>
-                <th scope="col">수량</th>
-                <th scope="col">총 구매 금액</th>
-                <th scope="col">주문 상태</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">20220923</th>
-                <td>이것은 갈비인가 통닭인가</td>
-                <td>치킨</td>
-                <td>1</td>
-                <td>12,300</td>
-                <td>입금완료</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>제목 2</td>
-                <td>2번</td>
-                <td>@fat</td>
-                <td>123</td>
-                <td>X</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>제목 3</td>
-                <td>닉네임3</td>
-                <td>@twitter</td>
-    
-                <td>123</td>
-                <td>X</td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>제목 4</td>
-                <td>닉네임 4</td>
-                <td>@twitter</td>
-                <td>123</td>
-                <td>X</td>
-              </tr>
-            </tbody>
-          </table>
-    </div>
-</body>
+    <div id="footers"></div>
+  </body>
 </html>
