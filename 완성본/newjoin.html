@@ -82,11 +82,32 @@
       position: relative;
       width: 100%;
       box-sizing: border-box;
-      height: 120px;
+      height: 130px;
       padding: 10px 0 0 0;
       border-top: 1px solid #ccd2b8;
       border-bottom: 1px solid #ccd2b8;
       
+    }
+    .joinform .input3{
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      box-sizing: border-box;
+      height: 80px;
+      padding: 0 40px 0 15px;
+      border-top: 1px solid #ccd2b8;
+      border-bottom: 1px solid #ccd2b8;
+      padding: 25px;
+      
+
+    }
+    .input3 input{
+      width: 100px;
+      height: 26px;
+    }
+    select{
+        padding: 5px 13px;
+ 
     }
   </style>
   <body>
@@ -129,7 +150,17 @@
    
         <dt>전화번호</dt>
         <dd>
-        <div class="input">
+        <div class="input3">
+          <select  >
+            <option>010</option>
+            <option value="1">011</option>
+            <option value="2">019</option>
+            <option value="3">017</option>
+            <option value="4">018</option>
+          </select>
+          -
+            <input type="text" />
+            -
             <input type="text" />
         </div>
         </dd>
@@ -173,6 +204,7 @@
                   onclick="sample4_execDaumPostcode()"
                   value="우편번호 "
                 /><br />
+                <p class="mt"></p>
                 <input type="text" id="sample4_roadAddress" placeholder="도로명주소" />
                 <input type="text" id="sample4_jibunAddress" placeholder="지번주소" />
                 <p class="mt"></p>
