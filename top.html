@@ -10,6 +10,17 @@
   <style></style>
   <header>
     <div class="inner">
+      <div class="Logo" style="width: 300px; margin: auto">
+        <img
+          src="HasBeganlogo.png"
+          alt=""
+          style="width: 300px; height: 280px"
+        />
+      </div>
+      <div class="input_wrap">
+        <input type="text" placeholder="검색어를 입력해보세요." />
+        <img src="/icon-search.svg" alt="search" />
+      </div>
       <div class="qickmenu">
         <ul class="topnav">
           <li class="qick"><a href="">로그인</a></li>
@@ -17,13 +28,6 @@
           <li class="qick"><a href="">장바구니</a></li>
           <li class="qick"><a href="">고객센터</a></li>
         </ul>
-      </div>
-      <div
-        class="Logo"
-        style="width: 100px; height: 80px; border: 1px solid navy"
-      ></div>
-      <div class="Mainname" style="display: flex; justify-content: center">
-        <a class="has"> Has Began </a>
       </div>
     </div>
     <div id="wrapper">
@@ -72,3 +76,38 @@
     </div>
   </header>
 </html>
+
+<style>
+  .input_wrap {
+    position: relative;
+    width: 450px;
+    height: 46px;
+    display: flex;
+    margin: auto;
+
+    top: 100px;
+  }
+
+  .input_wrap input {
+    width: 400px;
+    height: 46px;
+    border: 1.5px solid #767676;
+    border-radius: 50px;
+    padding: 13px 22px;
+    font-size: 16px;
+    line-height: 20px;
+    outline: none;
+  }
+
+  .input_wrap input::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    color: #767676;
+  }
+
+  .input_wrap img {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+  }
+</style>

@@ -23,7 +23,7 @@ header {
   top: 0;
 }
 .inner {
-  background-color: rgb(191, 194, 196);
+  /* background-color: rgb(191, 194, 196); */
 }
 .has {
   font-size: 500%;
@@ -31,7 +31,7 @@ header {
 
 /* nav css */
 #wrapper {
-  background-color: rgb(191, 194, 196);
+  /* background-color: rgb(191, 194, 196); */
   position: relative;
   padding: 0;
 }
@@ -57,10 +57,13 @@ header {
   vertical-align: middle;
 
   height: 50px;
+  transition: 0.5s;
 }
 
 #menu__menu:hover {
-  background-color: #deb6ab;
+  /* background-color: #deb6ab; */
+  border-bottom: 5px solid yellow;
+  z-index: 1;
 }
 
 #menu__menu:hover #subwrapper {
@@ -74,7 +77,7 @@ header {
 #subwrapper {
   display: none;
 
-  background-color: #deb6ab;
+  /* background-color: #deb6ab; */
 
   width: 100%;
 
@@ -109,5 +112,8 @@ header {
 }
 
 #submenu__menu:hover {
-  background-color: #ac7d88;
+  background-color: #ebfceb;
+  border-bottom: 5px solid green;
+}
+@media screen {
 }

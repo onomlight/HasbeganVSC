@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="media-320"></div>
+    <div id="media-768"></div>
+    <div id="media-1024"></div>
+    <div id="media-1025"></div>
+  </body>
+  <style>
+    #media-320,
+    #media-768,
+    #media-1024,
+    #media-1025 {
+      display: none;
+      height: 100px;
+      width: 100px;
+      overflow: hidden;
+      border: 1px solid green;
+    }
+
+
+    }
+    @media all and (min-width: 321px) and (max-width: 768px) {
+      #media-768 {
+        display: block;
+        background-color: red;
+      }
+    }
+    @media all and (min-width: 769px) and (max-width: 1024px) {
+      #media-1024 {
+        display: block;
+        background-color: blue;
+      }
+    }
+    @media all and (min-width: 1025px) {
+      #media-1025 {
+        display: block;
+        background-color: yellow;
+      }
+    }
+  </style>
+</html>
