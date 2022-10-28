@@ -7,11 +7,118 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="big">
-      <div class="1">logo</div>
-      <div class="1">input</div>
-      <div class="1">qickmenu</div>
-      <div class="1"></div>
+    <div id="big" style="">
+      <div class="one" id="one1">
+        <img src="/HasBeganlogo.png" alt="" style="width: 100%" />
+      </div>
+      <div class="one" id="one2" style="width: 500px">
+        <div class="input_wrap">
+          <input type="text" placeholder="검색어를 입력해보세요." />
+          <img src="/icon-search.svg" alt="search" />
+        </div>
+      </div>
+      <div class="one" id="one3">
+        <ul class="topnav">
+          <li class="qick"><a href="">로그인</a></li>
+          <li class="qick"><a href="">가입하기</a></li>
+          <li class="qick"><a href="">장바구니</a></li>
+          <li class="qick"><a href="">고객센터</a></li>
+        </ul>
+      </div>
     </div>
   </body>
+
+  <style>
+    .input_wrap {
+      position: relative;
+      width: 100%;
+      height: 46px;
+      display: flex;
+      margin: auto;
+
+      top: 100px;
+    }
+    .input_wrap input {
+      width: 100%;
+      height: 46px;
+      border: 1.5px solid #767676;
+      border-radius: 50px;
+      padding: 13px 22px;
+      font-size: 16px;
+      line-height: 20px;
+      outline: none;
+    }
+
+    #big {
+      position: relative;
+      margin: 0 auto;
+      justify-content: space-between;
+      display: flex;
+      margin-top: 2%;
+    }
+    .one {
+      width: 200px;
+      height: 200px;
+      border: 1px solid gray;
+    }
+    #one1 {
+    }
+    #one2 {
+      top: 100px;
+    }
+    #one3 {
+    }
+    #one1,
+    #one2,
+    #one3 {
+      top: 8px;
+      right: 16px;
+    }
+    #input {
+      margin-top: 50%;
+    }
+    @media all and (min-width: 321px) and (max-width: 768px) {
+      #one1 {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        transition: 0.3s;
+      }
+      #big {
+        width: 769px;
+      }
+    }
+    @media all and (min-width: 769px) and (max-width: 1024px) {
+      #one1,
+      #one2,
+      #one3 {
+        display: block;
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        transition: 0.3s;
+      }
+      #big {
+        width: 769px;
+      }
+    }
+    @media all and (min-width: 1025px) {
+      #one3 {
+        display: block;
+        background-color: yellow;
+      }
+      #big {
+        width: 1024px;
+      }
+    }
+    ul li {
+      list-style: none;
+      display: flex;
+    }
+    .input_wrap img {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+    }
+  </style>
 </html>

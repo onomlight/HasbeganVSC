@@ -17,10 +17,11 @@ header {
   padding: 10px;
 }
 .qickmenu {
-  float: right;
+  /* float: right; */
   position: absolute;
+
   left: 80%;
-  top: 0;
+  top: 5px;
 }
 .inner {
   /* background-color: rgb(191, 194, 196); */
@@ -39,8 +40,8 @@ header {
 #nav {
   width: 100%;
   max-width: 1024px;
-  padding: auto;
   margin: 0 auto;
+  border-bottom: 3px solid gray;
 }
 
 #menu__list {
@@ -60,12 +61,25 @@ header {
   transition: 0.5s;
 }
 
-#menu__menu:hover {
+.sb:hover {
   /* background-color: #deb6ab; */
-  border-bottom: 5px solid yellow;
+  border-bottom: 5px solid black;
   z-index: 1;
 }
+.health:hover {
+  border-bottom: 10px solid green;
+  z-index: 0;
+}
 
+.begun:hover {
+  border-bottom: 10px solid yellow;
+  z-index: 0;
+}
+
+.veiw:hover {
+  border-bottom: 10px solid plum;
+  z-index: 0;
+}
 #menu__menu:hover #subwrapper {
   display: block;
 }
@@ -112,8 +126,12 @@ header {
 }
 
 #submenu__menu:hover {
-  background-color: #ebfceb;
+  /* background-color: #ebfceb; */
   border-bottom: 5px solid green;
+  transition: 0.5s;
+}
+#nav:hover {
+  border-bottom: none;
 }
 @media screen {
 }
